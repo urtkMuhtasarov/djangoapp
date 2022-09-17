@@ -19,6 +19,6 @@ from lr3 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/', views.index),
-    path('', views.home),
+    path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
 ]

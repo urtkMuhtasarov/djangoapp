@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<header>
+    <a href="{% url 'home' %}">
+        home
+    </a>
+    |
+    <a href="{% url 'about' %}">about</a>
+</header>
+{% block home %} {% endblock home %}
+{% block about %} {% endblock about %}
+</body>
+</html>
